@@ -1,6 +1,6 @@
 import path from 'path';
 import webpack from 'webpack';
-import { BuildMode, BuildPaths, BuildPlatform, buildWebpack, BuildOptions } from '@packages/build-config';
+import { BuildMode, BuildPaths, BuildPlatform, buildWebpack } from '@packages/build-config';
 
 interface EnvVariables {
 	mode?: BuildMode;
@@ -26,6 +26,7 @@ export default (env: EnvVariables) => {  // env - объект с перемен
 		analyzer: env.analyzer,
 		platform: env.platform ?? 'desktop'
 	});
+
 	return config;
 };
 
