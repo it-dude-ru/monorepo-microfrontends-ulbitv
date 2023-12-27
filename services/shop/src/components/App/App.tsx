@@ -9,13 +9,8 @@ export const App = () => {
 	return (
 		<div>
 			<h1>
-				Page
+				Shop module
 			</h1>
-			<hr />
-			<Link to={'/about'}>about</Link>
-			<hr/>
-			<Link to={'/shop'}>shop</Link>
-			<hr />
 			<Outlet/>
 		</div>
 	);
